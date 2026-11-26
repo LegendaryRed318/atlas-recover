@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Atlas recovery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Get back to your home computer</h1>
+    <p class="muted">For Atlas owners who've lost everything: no travel USB, no phone, passwords forgotten. Type the recovery code you chose at home.</p>
+    <form class="card" id="f" autocomplete="off">
+      <label for="code">Your recovery code</label>
+      <input id="code" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="200">
+      <button class="primary" id="go">Find my computer</button>
+      <div id="msg" class="small"></div>
+    </form>
+    <div class="card small muted">
+      <b>How this works.</b> This page keeps nothing about you and sends your code nowhere. It works out, on this computer, which small locked file is yours, opens it with your code, and sends you to your own home computer. There you type the code again and your three recovery passphrases.
+      Without the right code, the files here say nothing: not even who uses this page.
+    </div>
+    <p class="small muted">Not your computer? Don't let the browser save anything, and close it when you're done.</p>
+    <noscript><p class="msg bad">This page needs JavaScript switched on.</p></noscript>
+  </main>
+  <script src="recover.js"></script>
+</body>
+</html>
